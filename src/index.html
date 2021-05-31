@@ -3,63 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction to Creative Coding</title>
-    <meta name="description" content="Introduction to Creative Coding" >
+    <title>Creative Coding Yoga</title>
+    <meta name="description" content="resource to learn creative coding in a mindfulness way" >
 </head>
 <body>
-    <div class="browser_mask">
-        <ol id="slides">
-            <li id="intro">
-                <h1>Introduction to Creative Coding</h1>
-                <p class="rainbow">in 5 steps</p>
-                <p class="origin">by <a href="https://medium.com/@zavalit">@seva_dolgopolov</a></p>
-            </li>
-            <li>
-                <h2 style="color:white;">1. Color</h2>
-                <canvas id="color_sample"></canvas>
-            </li>
-            <li>
-                <h2 class="white_stroke">2. Pattern</h2>
-                <canvas id="pattern_sample"></canvas>
-            </li>
-            <li>
-                <canvas id="alphabet_sample"></canvas>
-                <p class="origin">inpired by <a href="https://codepen.io/tholman">@tholman</a></p>
-            </li>
-            <li id="browser_extension">
-                <h2>4. Browser extension</h2>
-                <div class="browser_extension_screen"></div>
-                <p class="origin">Screenshot took by Shimeji Browser Extension</p>
-            </li>
-            <li id="bot">
-                <h2>5. Bot</h2>
-                <img  class="bot_icon" src="https://cdn.dribbble.com/users/722835/screenshots/4082720/bot_icon.gif" />
-                <p class="origin">icon from <a href="https://dribbble.com/irmirx">@irmirx</a></p>
-            </li>
-            <li id="principles">
-                <h2>main principles</h2>
-                <ul>
-                    <li>use to 100% Open Source tools</li>
-                    <li>we will try 2 Weeks sprints pro step</li>
-                    <li>we will do it in a co-learning way</li>                    
-                </ul>
-            </li>
+    <div id="startpage">
+        <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+                <clipPath id="clip"
+                >
+                    <path  d="M347.531,76.563c-24.257,0-43.991,19.734-43.991,43.991v68.295c-4.399-1.48-9.1-2.294-13.991-2.294
+                        c-4.891,0-9.592,0.814-13.99,2.294V43.991C275.558,19.734,255.824,0,231.567,0c-23.381,0-42.554,18.338-43.907,41.387
+                        c-4.422-1.498-9.153-2.323-14.075-2.323c-24.256,0-43.99,19.734-43.99,43.991v115.428h-9.098c-13.805,0-26.485,6.325-34.789,17.354
+                        c-8.305,11.028-10.879,24.963-7.064,38.23l31.818,110.658c8.664,30.132,26.482,56.027,51.528,74.887
+                        c25.047,18.859,54.857,28.828,86.211,28.828c79.026,0,143.319-64.293,143.319-143.32V120.553
+                        C391.521,96.297,371.787,76.563,347.531,76.563z M289.549,216.554c7.715,0,13.991,6.276,13.991,13.991v48.513
+                        c0,7.714-6.276,13.991-13.991,13.991c-7.714,0-13.99-6.276-13.99-13.991v-48.513C275.558,222.831,281.835,216.554,289.549,216.554z
+                        M217.577,43.991c0-7.714,6.276-13.991,13.99-13.991c7.715,0,13.991,6.276,13.991,13.991v156.787
+                        c-4.399-1.48-9.1-2.294-13.991-2.294h-13.99V43.991z M159.595,83.055c0-7.714,6.276-13.991,13.99-13.991
+                        c7.715,0,13.991,6.276,13.991,13.991v115.428h-27.981V83.055z M361.521,325.12c0,62.485-50.835,113.32-113.32,113.32
+                        c-24.79,0-48.36-7.882-68.164-22.793s-33.892-35.387-40.742-59.211l-31.818-110.658c-1.188-4.128-0.386-8.463,2.198-11.895
+                        c2.583-3.432,6.528-5.399,10.823-5.399h111.069c7.715,0,13.991,6.276,13.991,13.991c0,7.714-6.276,13.991-13.991,13.991h-73.988
+                        c-8.284,0-15,6.716-15,15s6.716,15,15,15h23.318c9.163,15.392,14.501,32.788,15.515,50.756c0.451,7.983,7.065,14.155,14.963,14.155
+                        c0.285,0,0.571-0.008,0.859-0.024c8.271-0.467,14.598-7.55,14.131-15.822c-0.96-17.012-4.993-33.614-11.799-49.064h17.002
+                        c5,0,9.803-0.85,14.285-2.394c2.497,21.903,21.136,38.978,43.696,38.978c24.257,0,43.991-19.734,43.991-43.991V120.553
+                        c0-7.714,6.276-13.991,13.991-13.991c7.714,0,13.99,6.276,13.99,13.991V325.12z"/>
+                </clipPath>
+            </defs>
+        </svg>
 
-            <li id="tooling">
-                <h2>tooling</h2>
-                <ul>
-                    <li><a href="https://www.javascript.com/">JavaSctipt</a> as a programming language</li>
-                    <li><a href="https://code.visualstudio.com/">VS-Code</a> for code editing</li>
-                    <li><a href="https://www.google.com/intl/de_de/chrome/">Chrome</a> for primary execution environment </li>
-                    <li><a href="https://git-scm.com/">Git</a> for version control</li>
-                    <li><a href="https://github.com/">Github</a> for tasks assignments</li>
-                </ul>
-            </li>
-        </ol>
-    </div>
-    <div id="navigation">
-        <button aria-label="previous slide" id="to_previous_slide"></button> 
-        <button aria-label="next slide" id="to_next_slide"></button> 
+        <div class="hero">
+            <h1>creative coding yoga</h1>
+        </div>
+        <div class="hero hero_secondary" aria-hidden="true">
+            <h1>creative coding yoga</h1>
+        </div>
+
     </div>
    
 </body>
