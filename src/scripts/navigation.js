@@ -2,7 +2,7 @@ const slides = document.getElementById('slides')
 
 const state = {
 
-    active_slide : 6,
+    active_slide : 3,
 
     slideUp : function () {
         if (this.active_slide + 1 < slides.childNodes.length) {
