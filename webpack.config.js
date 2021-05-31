@@ -12,7 +12,7 @@ module.exports = {
     devtool: 'source-map',
     module: {
         rules: [
-            { test: /(\.svg|\.jpeg)$/, use: ['file-loader'] },
+            { test: /(\.svg|\.jpeg|\.png)$/, use: ['file-loader'] },
             {
                 test: /\.s[ac]ss$/i,
                 use: [

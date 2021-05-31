@@ -13,7 +13,6 @@ function Banner(){
       var parts = [];
       
       var mouse = {x:-100,y:-100};
-      var mouseOnScreen = false;
       
       var itercount = 0;
       var itertot = 5;
@@ -31,8 +30,7 @@ function Banner(){
           bgCanvas.width = window.innerWidth;
           bgCanvas.height = window.innerHeight;
       
-          canvas.addEventListener('mousemove', MouseMove, false);
-          canvas.addEventListener('mouseout', MouseOut, false);
+      
               
           start();
       }
@@ -41,7 +39,7 @@ function Banner(){
               
           bgContext.fillStyle = "#000000";
           bgContext.font =  `${window.innerWidth < 500 ? 65 : 100}px sans-serif`;
-          bgContext.fillText(keyword, window.innerWidth / 2 - 230, window.innerHeight / 2 + 25);
+          bgContext.fillText(keyword, window.innerWidth / 2 - 170, window.innerHeight / 2 + 25);
           
           clear();	
           getCoords();
@@ -75,7 +73,7 @@ function Banner(){
           var vely = (y - starty) / itertot;	
           
           parts.push(
-              {c: '#' + (Math.random() * 0x525252 + 0x000000 | 0).toString(16),
+              {c: '#' + (Math.random() * 0x525252 + 0xaaaaaa | 0).toString(16),
                x: x, //goal position
                y: y,
                x2: startx, //start position
@@ -125,22 +123,7 @@ function Banner(){
           }	
       }
       
-      var MouseMove = function(e) {
-          if (e.layerX || e.layerX == 0) {
-              //Reset particle positions
-              mouseOnScreen = true;
-              
-              
-              mouse.x = e.layerX - canvas.offsetLeft;
-              mouse.y = e.layerY - canvas.offsetTop;
-          }
-      }
-      
-      var MouseOut = function(e) {
-          mouseOnScreen = false;
-          mouse.x = -100;
-          mouse.y = -100;	
-      }
+   
       
       //Clear the on screen canvas
       var clear = function(){

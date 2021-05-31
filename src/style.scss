@@ -141,6 +141,7 @@ body {
             left: 11px; 
             top: 12px;
         }
+
         #to_next_slide::after {
             background: url('./statics/arrow_forward_24dp.svg');
             left: 13px; 
@@ -165,6 +166,52 @@ body {
         padding: 1rem;
         border-radius: 5px;
     }
+
+    .swipe {
+        
+        background: url('./statics/finger-swipe-svgrepo-com.svg') no-repeat;
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+
+        bottom: 25rem;
+        left: calc(50% - 1rem);
+
+        @include for-desktop {
+            display: none;
+        }
+
+    }
+}
+
+#alphabet {
+
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+
+    .alphabet_screen {
+        background: url('./statics/alphabet.png') no-repeat 50% 50%;
+        background-size: contain;
+        
+        width: 80%;
+        height: 50%;
+    }
+
+    @include for-desktop {
+
+        h2 {
+            width: 50%;
+            text-align: right;
+        }
+
+        .alphabet_screen {
+            width: 50%;
+            height: 50%;
+        }
+        
+    }
+
 }
 
 #browser_extension {
