@@ -10,12 +10,19 @@ All you need is just
 
 * and afterwards let it run with `yarn dev`
 
-If you want to work on a specific slide, go to `src/scripts/navigation.js` and change for example:
+* open in browser http://localhost:8080/
+
+
+If you want to work/hack on a specific slide, go to `src/scripts/navigation.js` and change for example:
 - for `1. Color Basic` slide `active_slide: 0` to `active_slide: 1`, 
 - for `2. Iterative Patterns` set `active_slide: 2` 
 - and so on.
 
 
-open in browser http://localhost:8080/
+There are 2 slides you probably would like to tweak/hack on.
+- in `src/scripts/color.js` to play with the way the color in `1. Color Basics` slide has been rendered
+- in `src/scripts/pattern.js` to experiment with pattern in `2. Iterative Patterns` slide
+
+
 
 
