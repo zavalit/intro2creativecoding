@@ -45,6 +45,21 @@ body {
     overflow: hidden;
 }
 
+.rs {
+    background: url('./statics/rs-logo-2.png') no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 100px;
+    font-style: italic;
+    position: absolute;
+    bottom: 10rem;
+    opacity: .5;
+    padding-left: 100px;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
 #slides {
     margin: 0;
     padding: 0;
@@ -165,6 +180,7 @@ body {
         color: #fff;
         padding: 1rem;
         border-radius: 5px;
+        margin: 2rem;
     }
 
     .swipe {

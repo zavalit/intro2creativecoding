@@ -27,14 +27,17 @@ const ctx = canvas.getContext('2d')
 
 const render = () => {
 
-    for(let x = 0; x<window.innerWidth; x = x+2){
+    const {innerWidth, innerHeight} = window
 
-        for(let y = 0; y<window.innerHeight; y = y+2){
+    for(let x = 0; x < innerWidth; x += 2){
+
+        for(let y = 0; y < innerHeight; y += 2){
 
             ctx.fillStyle = `rgb(
-                ${Math.floor(255 - 255 * x / window.innerWidth)},
-                ${Math.floor(255 - 255 * y / window.innerHeight)},
+                ${Math.floor(255 - 255 * x / innerWidth)},
+                ${Math.floor(255 - 255 * y / innerHeight)},
                 255
+                
             )`
             ctx.fillRect(x, y, 2, 2)
 
