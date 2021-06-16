@@ -1,5 +1,5 @@
 # intro2creativecoding
-Slides for "Introduction to Creative Coding"  course
+Slides for ["Introduction to Creative Coding"](http://creative-coding.yoga/intro)  course.
 
 
 ## try it out 
